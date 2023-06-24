@@ -67,7 +67,7 @@ const Side = () => {
           <MenuItem
             className="item logOut"
             icon={<FiLogOut size={25} />}
-            component={<Link to="/calendar" />}
+            component={<Link to="/" />}
           >
             {" "}
             Log Out

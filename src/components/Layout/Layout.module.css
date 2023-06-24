@@ -1,0 +1,92 @@
+.container {
+    color    : var(--text);
+    display  : flex;
+    font-size: 15px;
+    width    : 100%;
+}
+
+.sidebar {
+    width: 3%;
+}
+
+.dashboard {
+    position: relative;
+    width   : 97%;
+    z-index : 0;
+}
+
+.header {
+    align-items     : center;
+    background-color: var(--bg);
+    display         : flex;
+    height          : 80px;
+    justify-content : space-between;
+    padding         : 10px 20px;
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header>:nth-child(1) {
+    font-weight: 500;
+}
+
+.right {
+    align-items    : center;
+    display        : flex;
+    gap            : 40px;
+    justify-content: center;
+}
+
+.icons {
+    display: flex;
+    gap    : 12px;
+}
+
+.icon {
+    align-items     : center;
+    background-color: var(--blue);
+    border-radius   : 50%;
+    display         : flex;
+    height          : 37px;
+    justify-content : center;
+    width           : 37px;
+}
+
+
+.profile {
+    align-items    : center;
+    display        : flex;
+    gap            : 20px;
+    justify-content: center;
+}
+
+.profile>img {
+    border       : 2px solid var(--blue);
+    border-radius: 50%;
+    height       : 45px;
+    width        : 45px;
+}
+
+.details {
+    align-items    : start;
+    display        : flex;
+    flex-direction : column;
+    gap            : 7px;
+    justify-content: center;
+}
+
+.details>:nth-child(1) {
+    font-weight: 500;
+}
+
+.details>:nth-child(2) {
+    color      : var(--blue);
+    font-size  : 12px;
+    font-weight: 300;
+}
+
+.content {
+    height         : 100vh;
+    overflow-y     : scroll;
+    scrollbar-width: none;
+    width          : 100%;
+}

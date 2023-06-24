@@ -1,0 +1,59 @@
+.container {
+    align-items     : center;
+    background-color: var(--bg);
+    display         : flex;
+    flex-direction  : column;
+    height          : 100vh;
+    justify-content : start;
+    overflow-x      : hidden;
+    overflow-y      : scroll;
+    padding         : 0px 15px;
+    scrollbar-width : none;
+    border-right: 0.1px solid rgba(255, 255, 255, 0.1);
+    z-index         : 0;
+}
+
+.logo {
+    background-color: var(--bg);
+    height          : 80px;
+    width           : 250px;
+    z-index         : 99;
+}
+
+.logo>img {
+    left       : 55px;
+    margin-left: 50px;
+    margin-top : 30px;
+    width      : 120px;
+}
+
+.side {
+    width: 100%;
+}
+
+.menu {
+    background-color: var(--bg);
+    color           : var(--secondary-text);
+    display         : flex;
+    flex-direction  : column;
+    font-family     : 'Poppins', sans-serif;
+    font-size       : 14px;
+    font-weight     : 400;
+    padding-top     : 30px;
+    width           : 100%;
+}
+
+.item {
+    background-color: var(--bg);
+    transition      : all 300ms;
+}
+
+.logOut {
+    margin-top: 270px;
+}
+
+
+.css-1t8x7v1 > .ps-menu-button:hover {
+  background-color: var(--blue) !important;
+  color: white;
+}

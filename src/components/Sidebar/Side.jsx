@@ -34,7 +34,7 @@ const Side = () => {
           <MenuItem
             className="item"
             icon={<MdGrade size={25} />}
-            component={<Link to="/teachers" />}
+            component={<Link to="/transcript" />}
           >
             Transcript
           </MenuItem>

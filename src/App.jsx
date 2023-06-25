@@ -5,6 +5,7 @@ import Student from "./pages/StudentList/Student";
 import View from "./pages/View/View";
 import Calendar from "./pages/Calendar/Calendar";
 import Kanban from './pages/Kanban/Kanban'
+import Transcript from './pages/Transcript/Transcript'
 const App = () => {
   return (
     <div id="dashboard">
@@ -16,7 +17,7 @@ const App = () => {
             <Route path="/view" element={<View />} />
             <Route path="/calendar" element={<Calendar />} />
             <Route path="/kanban" element={<Kanban />} />
-
+            <Route path="/transcript" element={<Transcript/>} />
           </Route>
         </Routes>
       </BrowserRouter>

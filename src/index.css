@@ -7,6 +7,8 @@
   --bg            : #1B1B1B;
   --back: rgba(85, 134, 255, 0.8);
   --border: 0.1px solid rgba(255, 255, 255, 0.1);
+  --transparent-black: rgba(0, 0, 0, 0.294);
+
 }
 
 html {

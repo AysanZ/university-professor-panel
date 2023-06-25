@@ -1,0 +1,64 @@
+.board-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 25px;
+}
+.board-container>:nth-child(1)
+{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+}
+.react-kanban-board{
+    color:var(--grey);
+}
+.react-kanban-board >:nth-child(1)
+{
+    width: 100%;
+}
+.react-kanban-board>:nth-child(1)> div{
+    width: 24%;
+}
+.react-kanban-column{
+    background-color: var(--black);
+    border-radius: 8px;
+}
+.react-kanban-column>:nth-child(2)>div>div
+{
+    width: 100%;
+}
+.kanban-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--black);
+    padding: 10px;
+    gap: 25px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.kanban-card>:nth-child(1)
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remove-button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.column-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8px;
+}
+
+.column-header>svg{
+    cursor: pointer
+}

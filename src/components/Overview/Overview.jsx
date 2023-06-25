@@ -4,7 +4,6 @@ import { BsFillCircleFill, BsFillCalendarDateFill } from "react-icons/bs";
 import { BiTime } from "react-icons/bi";
 import { BiCheck } from "react-icons/bi";
 import css from "./Overview.module.css";
-import Chart2 from "../Charts/Chart2";
 
 const Overview = () => {
   return (

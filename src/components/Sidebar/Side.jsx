@@ -1,9 +1,9 @@
 import React from "react";
-import { MdSpaceDashboard } from "react-icons/md";
+import { MdSpaceDashboard , MdGrade} from "react-icons/md";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Link } from "react-router-dom";
-import { BsFillCalendarEventFill } from "react-icons/bs";
-import { HiAcademicCap } from "react-icons/hi";
+import { BsFillCalendarEventFill,BsFillPersonFill } from "react-icons/bs";
+import { HiAcademicCap,HiViewBoards } from "react-icons/hi";
 import { FaChalkboardTeacher, FaBookReader, FaBuilding } from "react-icons/fa";
 import {FiLogOut} from 'react-icons/fi'
 import "./Sidebar.css";
@@ -33,7 +33,7 @@ const Side = () => {
 
           <MenuItem
             className="item"
-            icon={<FaChalkboardTeacher size={25} />}
+            icon={<MdGrade size={25} />}
             component={<Link to="/teachers" />}
           >
             Transcript
@@ -41,28 +41,32 @@ const Side = () => {
 
           <MenuItem
             className="item"
-            icon={<FaBuilding size={25} />}
-            component={<Link to="/faculties" />}
+            icon={<BsFillPersonFill size={25} />}
+            component={<Link to="/view" />}
           >
-            Faculty
+            Profile
           </MenuItem>
+
+
+          
 
           <MenuItem
             className="item"
-            icon={<FaBookReader size={25} />}
-            component={<Link to="/subjects" />}
-          >
-            Subject
-          </MenuItem>
-
-          <MenuItem
-            className="item"
-            icon={<BsFillCalendarEventFill size={25} />}
+            icon={<BsFillCalendarEventFill size={23} />}
             component={<Link to="/calendar" />}
           >
             {" "}
             Calendar
           </MenuItem>
+
+          <MenuItem
+            className="item"
+            icon={<HiViewBoards size={25} />}
+            component={<Link to="/kanban" />}
+          >
+            Kanban
+          </MenuItem>
+
 
           <MenuItem
             className="item logOut"
